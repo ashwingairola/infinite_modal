@@ -1,0 +1,84 @@
+body
+{
+  height: 100%;
+}
+
+.click
+{
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes showmodalcontent
+{
+  0%
+  {
+    display: hidden;
+  }
+}
+
+.click a
+{
+  margin: auto;
+  position: absolute;
+
+  animation-name: showmodalcontent;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.modallink
+{
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.modal
+{
+  background-color: #e3e3e3;
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 0;
+
+  animation-name: showmodal;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-delay: 0;
+}
+
+@keyframes showmodal
+{
+  0%
+  {
+    height: 0%;
+    width: 0%;
+    opacity: 0;
+  }
+}
+
+.closebtn
+{
+  float: right;
+  font-weight: bold;
+}
+
+.closebtn:hover
+{
+  color: red;
+}
